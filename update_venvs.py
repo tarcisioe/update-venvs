@@ -53,7 +53,7 @@ def update_envs(workspace: Path) -> None:
     pyproject_tomls = workspace.glob('**/pyproject.toml')
 
     for pyproject_path in pyproject_tomls:
-        update_env(pyproject_toml)
+        update_env(pyproject_path)
 
 
 if __name__ == '__main__':
