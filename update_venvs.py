@@ -27,7 +27,7 @@ def get_extras(pyproject: TOMLDocument) -> list[str]:
 
 
 def update_env(pyproject_path: Path) -> None:
-    project_path = env.parent
+    project_path = pyproject_path.parent
 
     venv = project_path / '.venv'
 
